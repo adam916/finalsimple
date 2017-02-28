@@ -1,16 +1,18 @@
 public class Snake
 {
     private String name;
-    public int positionX =10;
-    public int positionY = 10;
+    private int positionX =10;
+    private int positionY = 10;
 
-    public Snake(){
+    public Snake(String name, int positionX, int positionY){
      this.name = name;
      this.positionX = positionX;
      this.positionY = positionY;
     }
 
+    public Snake(){
 
+    }
 
    public void declarePosition(){
         System.out.println("I am a snake and i'm standing on square (" + currentPosition() + ")");
@@ -60,6 +62,4 @@ public class Snake
     public void killRabbit(){
         System.out.println("You're mine mr rabbit!!!'");
     }
-
-
 }

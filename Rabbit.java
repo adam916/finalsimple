@@ -1,15 +1,18 @@
 public class Rabbit
 {
     private String name;
-    public int positionX = 1;
-    public int positionY = 1;
+    private int positionX = 1;
+    private int positionY = 1;
 
-    public Rabbit(){
+    public Rabbit(String name, int positionX, int positionY){
         this.name = name;
         this.positionX = positionX;
         this.positionY = positionY;
     }
 
+    public Rabbit(){
+
+    }
 
 
     public void declarePosition(){
@@ -61,8 +64,4 @@ public class Rabbit
         System.out.println("Please dont kill mee :'( ");
     }
 
-
-
-
-    
 }
